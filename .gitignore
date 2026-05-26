@@ -9,6 +9,8 @@ backend/node_modules/
 frontend/node_modules/
 
 # Vite ビルド成果物
+dist/
+.vite/
 frontend/dist/
 frontend/.vite/
 
