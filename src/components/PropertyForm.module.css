@@ -1,0 +1,115 @@
+/* 物件登録・編集モーダルのスタイル */
+
+/* 半透明の背景オーバーレイ */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 100;
+}
+
+/* モーダルカード */
+.modal {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.field input,
+.field select {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background-color: #ffffff;
+}
+
+.field input:focus,
+.field select:focus {
+  border-color: #4a7c59;
+  box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.15);
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 0.88rem;
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+}
+
+/* ボタン行 */
+.buttonRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.cancelButton {
+  flex: 1;
+  padding: 0.7rem;
+  background-color: #edf2f7;
+  color: #4a5568;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.cancelButton:hover:not(:disabled) {
+  background-color: #e2e8f0;
+}
+
+.submitButton {
+  flex: 2;
+  padding: 0.7rem;
+  background-color: #4a7c59;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.submitButton:hover:not(:disabled) {
+  background-color: #3a6347;
+}
+
+.submitButton:disabled,
+.cancelButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
