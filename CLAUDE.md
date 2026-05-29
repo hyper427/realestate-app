@@ -44,6 +44,11 @@
 - `feature/<機能名>` — 新機能開発用。
 - `fix/<バグ名>` — バグ修正用。
 
+## デプロイ情報
+
+- 本番URL：https://realestate-app-rho-eosin.vercel.app
+- Supabaseプロジェクト名：realestate-app
+
 ## 開発ガイドライン
 
 - セキュリティ脆弱性（SQLインジェクション、XSS など）を絶対に導入しないこと。
